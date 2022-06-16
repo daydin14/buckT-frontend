@@ -19,9 +19,6 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <MainBody />
-      <Footer />
-      <SideList />
 
       <Route exact path="/">
         <Home />
@@ -32,10 +29,16 @@ function App() {
       </Route>
 
 
-      <Route path="Login">
+      {/* <Route path="Login">
         <Login />
+      </Route> */}
+      <Route path="/Login">
+        <Login />
+        <MainBody />
+        <SideList />
       </Route>
   
+      <Footer />
     </div>
   );
 }
