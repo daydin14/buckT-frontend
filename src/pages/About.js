@@ -1,12 +1,11 @@
-import React from 'react'
+import { Link } from 'react-router-dom';
 
-function About() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
 
-export default About
+const About = (props) => {
+    return(
+        <h2> about us page</h2>
+    );
 
+};
+
+export default About;
