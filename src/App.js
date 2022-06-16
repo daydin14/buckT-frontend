@@ -20,7 +20,6 @@ function App() {
     <div className="App">
       <NavBar />
       <MainBody />
-      <Footer />
       <SideList />
 
       <Route exact path="/">
@@ -36,6 +35,7 @@ function App() {
         <Login />
       </Route>
   
+      <Footer />
     </div>
   );
 }
