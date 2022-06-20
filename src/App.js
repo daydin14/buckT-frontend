@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+import { auth } from './services/firebase';
 import { Route } from "react-router-dom";
 
 // UI Components
@@ -9,16 +11,23 @@ import SideList from "./components/Sidelist";
 //  Pages
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
+// import Login from "./pages/Login";
 
 
 // Styles
 import './App.css';
 
 function App() {
+  const [ user, setUser ] = useState(null);
+  useEffect (() => {
+    const unsubscribe = auth.onAuthStateChanged(user => setUser(user));
+      return () => {
+        unsubscribe();
+      };
+  }, []);
   return (
     <div className="App">
-      <NavBar />
+      <NavBar user={user}/>
 
       <Route exact path="/">
         <Home />
@@ -28,12 +37,8 @@ function App() {
         <About />
       </Route>
 
-
-      {/* <Route path="Login">
-        <Login />
-      </Route> */}
-      <Route path="/Login">
-        <Login />
+      <Route path="/List">
+        {/* <Login /> */}
         <MainBody />
         <SideList />
       </Route>
