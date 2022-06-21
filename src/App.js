@@ -30,7 +30,7 @@ function App() {
       <NavBar user={user}/>
 
       <Route exact path="/">
-        <Home />
+        <Home user={user}/>
       </Route>
 
       <Route path="/About">
