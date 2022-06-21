@@ -41,9 +41,24 @@ code {
   top: 0;
 }
 
-.title {
-  list-style: none;
+.welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.navLink {
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.greeting-icon {
+  display: flex;
+  flex-direction: row;
+} 
+
 
 /* ________________Footer Component Styling________________ */
 .footer {
