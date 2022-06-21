@@ -1,7 +1,14 @@
+import { useState } from "react";
 import Create from "../components/Create";
 
 const Home = (props) => {
-    const URL = ''
+    const [ pathURL, setPathURL ] = useState(null);
+
+    const selectURL = (event) => {
+        setPathURL(event.target.innerText.toLowerCase())
+    }
+    
+    const URL = `http://localhost:4000/${pathURL}` //need to update w/ heroku link when deployed
     const createDestination = async (destination) => {
         if (!props.user) return;
         await fetch(URL, {
@@ -13,17 +20,27 @@ const Home = (props) => {
         });
         // getDestination();
     };
+    
+    // console.log(URL)
 
     return(
         <div className="Home">
-            <h1 className="neonText">Welcome to {`<li>Buck-T</li>`}</h1>
-            <p className="neonText">{`<li>Buck-T</li>`} is your onse-stop travel bucket list maker.</p>
-            <p className="neonText"> Add the destination of your dreams to your list, and begin daydreaming!</p>
             { !props.user &&
+            <>
+                <h1 className="neonText">Welcome to {`<li>Buck-T</li>`}</h1>
+                <p className="neonText">{`<li>Buck-T</li>`} is your onse-stop travel bucket list maker.</p>
+                <p className="neonText"> Add the destination of your dreams to your list, and begin daydreaming!</p>
                 <p className="neonText">Please login to enjoy all the features of our site!</p>
+            </>
             }
             { props.user &&
-                <Create createDestination={createDestination}/>
+            <>
+                <div className="addBucket">
+                    <button onClick={selectURL} value="activity">Activity</button>
+                    <button onClick={selectURL} value="location">Location</button>
+                </div>
+                <Create createDestination={createDestination} />
+            </>
             }
         </div>
     );
