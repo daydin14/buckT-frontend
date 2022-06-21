@@ -60,6 +60,13 @@ code {
 } 
 
 
+/* ________________Create Component Styling________________ */
+.addBucket {
+  display: flex;
+  flex-direction: row;
+}
+
+
 /* ________________Footer Component Styling________________ */
 .footer {
   background-image: url("https://giffiles.alphacoders.com/212/212792.gif");
