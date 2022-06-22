@@ -8,7 +8,7 @@ const Home = (props) => {
         setPathURL(event.target.innerText.toLowerCase())
     }
     
-    const URL = `http://localhost:4000/${pathURL}` //need to update w/ heroku link when deployed
+    const URL = `https://buckt-backend.herokuapp.com/${pathURL}` //need to update w/ heroku link when deployed
     const createDestination = async (destination) => {
         if (!props.user) return;
         await fetch(URL, {

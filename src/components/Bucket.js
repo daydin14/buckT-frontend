@@ -8,7 +8,7 @@ const Bucket = (props) => {
   const [ bucket, setBucket ] = useState();
   
   const getActivity = async () => {
-    const URL = 'http://localhost:4000/activity' // need to update with heroku link
+    const URL = 'https://buckt-backend.herokuapp.com/activity' // need to update with heroku link
     if (!props.user) return;
     const token = props.user.getIdToken();
     // console.log(URL)
@@ -24,7 +24,7 @@ const Bucket = (props) => {
   };
 
   const getLocation = async () => {
-    const URL = 'http://localhost:4000/location' // need to update with heroku link
+    const URL = 'https://buckt-backend.herokuapp.com/location' // need to update with heroku link
     if (!props.user) return;
     const token = props.user.getIdToken();
     // console.log(URL)
