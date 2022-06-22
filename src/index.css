@@ -112,10 +112,11 @@ a {
 
 /* ________________About Page Styling________________ */
 .Picture{
-  position: absolute;
+  position: relative;
   top: 15%;
   display: flex;
   justify-content: space-evenly;
+  flex-flow: row wrap;
   
 }
 
