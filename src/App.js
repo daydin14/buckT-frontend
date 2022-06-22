@@ -4,9 +4,10 @@ import { Route } from "react-router-dom";
 
 // UI Components
 import Footer from "./components/Footer"
-import MainBody from "./components/Mainbody";
+// import MainBody from "./components/Mainbody";
+// import SideList from "./components/Sidelist";
 import NavBar from "./components/Navbar";
-import SideList from "./components/Sidelist";
+import Bucket from "./components/Bucket";
 
 //  Pages
 import About from "./pages/About";
@@ -38,9 +39,9 @@ function App() {
       </Route>
 
       <Route path="/List">
-        {/* <Login /> */}
-        <MainBody />
-        <SideList />
+        <Bucket user={user}/>
+        {/* <SideList user={user}/>
+        <MainBody /> */}
       </Route>
   
       <Footer />

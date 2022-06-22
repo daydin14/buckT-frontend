@@ -24,6 +24,9 @@ const NavBar = (props) => {
           ? 
           (
             <>
+              <Link to='/List'>
+                <h4 className="link">Your List</h4>
+              </Link>
               <h4 className="navLink" onClick={logout} >Logout</h4>
               <h4 className="greeting-icon">
                 <img 
@@ -38,9 +41,6 @@ const NavBar = (props) => {
         }
 
       </span>
-      {/* <Link to='/Login'>
-        <div className="link">Login</div>
-      </Link> */}
     </div>
   )
 }
