@@ -7,7 +7,6 @@ const Create = (props) => {
     image: '',
     description: '',
   });
-  // const [ value, setValue ] = useState(null);
 
   const handleChange = (event) => {
     setNewForm({
@@ -18,18 +17,11 @@ const Create = (props) => {
     event.preventDefault();
     props.createDestination(newForm);
   };
-  // const dropChange = (event) => {
-  //   setValue(event.target.value);
-  //   props.selectURL(value)
-  // };
+ 
 
   return(
     <div className="createForm">
       <form onSubmit={handleSubmit}>
-        {/* <select value={value} onChange={dropChange} name="Bucket List" id="bucketList">
-          <option value="destination">Destination</option>
-          <option value="activity">Activity</option>
-        </select> */}
 
         <input 
           value={newForm.title}
