@@ -1,13 +1,19 @@
+
+
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('https://etherealgaming.co.uk/uploads/monthly_2021_03/p4ga3jgyoxs01.gif.902d8540e669b9b0370dbdf8ae5c4efc.gif');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/002/307/811/original/watercolor-pastel-background-hand-painted-aquarelle-colorful-stains-on-paper-vector.jpg');
   background-repeat: no-repeat;
   background-color: #F4F4F4;
   background-size: cover;
+  background-position: center;
   height: 100vh;
+  
+  
+
 }
 
 body {
@@ -26,7 +32,7 @@ code {
 
 /* ________________Navbar Component Styling________________ */
 .NavBar {
-  background-image: url("https://giffiles.alphacoders.com/212/212792.gif");
+  background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo-1250x834.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #654062;
@@ -60,16 +66,9 @@ code {
 } 
 
 
-/* ________________Create Component Styling________________ */
-.addBucket {
-  display: flex;
-  flex-direction: row;
-}
-
-
 /* ________________Footer Component Styling________________ */
 .footer {
-  background-image: url("https://giffiles.alphacoders.com/212/212792.gif");
+  background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo-1250x834.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #654062;
@@ -79,7 +78,7 @@ code {
   align-items: center;
   margin: 0;
   color: white;
-  position: absolute;
+  position:fixed;
   width: 100%;
   bottom: 0;
 }
@@ -108,16 +107,74 @@ a {
  
 }
 
+.seperate{
+  cursor: pointer;
+
+padding: 5%;
+
+}
+
+
+.lists{
+  /* background-image: url("https://c4.wallpaperflare.com/wallpaper/816/62/518/digital-art-nature-trees-mountains-wallpaper-preview.jpg");
+  background-position:right;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  position: absolute;
+  top:23%;
+  left:15%;
+  width: 15%;
+  height: 65%;
+  color: red;
+
+  display: flex;
+  justify-content: start;
+
+}
+
+.bucket{
+  position: absolute;
+  width: 18%;
+  top: 11%;
+  left: 14%;
+  color: orange;
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.main {
+  position: absolute;
+  background-color: rgba(255, 166, 0, 0);
+  width: 60%;
+  left: 30%;
+  height: 72%;
+  top: 16%;
+ 
+  
+}
+
+.neonText{
+  font-size: 2em;
+  color: rgb(0, 221, 255);
+}
+
+.addBucket{
+  background-color: aqua;
+}
+
 
 
 /* ________________About Page Styling________________ */
 .Picture{
   position: relative;
-  top: 15%;
+  top: -5%;
   display: flex;
   justify-content: space-evenly;
-  flex-flow: row wrap;
-  
+
+
+   object-fit:scale-down;
 }
 
 .Mahamed{
@@ -402,3 +459,5 @@ justify-content: space-evenly;
         bottom:0px;
       }
   }
+
+
