@@ -43,12 +43,10 @@ const Create = (props) => {
           value={newForm.description}
           onChange={handleChange}
           name="description"
-          cols="30"
-          rows="10"
           placeholder="description" 
         />
         <br />
-        <input type="submit" value="Add to Bucket!"/>
+        <input type="submit" value="Add to Bucket!" />
       </form>
     </div>
   )

@@ -16,10 +16,9 @@ const Bucket = (props) => {
     //     el.style.visibility = 'visible';
     //   }
     // } 
-    const URL = 'https://buckt-backend.herokuapp.com/activity' // need to update with heroku link
+    const URL = 'https://buckt-backend.herokuapp.com/activity' 
     if (!props.user) return;
     const token = props.user.getIdToken();
-    // console.log(URL)
     const response = await fetch(URL, {
       method: 'GET',
       headers: {
@@ -27,7 +26,6 @@ const Bucket = (props) => {
       }
     });
     const data = await response.json();
-    // console.log(data)
     setBucket(data);
   };
 
@@ -40,10 +38,9 @@ const Bucket = (props) => {
     //     el.style.visibility = 'visible';
     //   }
     // } 
-    const URL = 'https://buckt-backend.herokuapp.com/location' // need to update with heroku link
+    const URL = 'https://buckt-backend.herokuapp.com/location'
     if (!props.user) return;
     const token = props.user.getIdToken();
-    // console.log(URL)
     const response = await fetch(URL, {
       method: 'GET',
       headers: {
@@ -51,10 +48,9 @@ const Bucket = (props) => {
       }
     });
     const data = await response.json();
-    // console.log(data)
-    setBucket(data);
+     setBucket(data);
   };
-  // console.log(bucket)
+  console.log(bucket)
 
   useEffect(() => {
     if (props.user) {
