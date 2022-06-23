@@ -7,12 +7,12 @@ const SideList = ({ bucket, URL }) => {
   const loaded = () => {
   
     return bucket.map(buck =>
-      <li key={buck._id} className='bucketItem'>
+      <div key={buck._id} className='bucketItem'>
         <Link to={`/${buck._id}`}>
           <h4 id='bucketItem'>{buck.title}</h4>
           <img id='bucketImg' src={buck.img} alt={buck.title} />
         </Link>
-      </li>
+      </div>
       )
   }
 
