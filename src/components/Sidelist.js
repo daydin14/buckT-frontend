@@ -7,13 +7,13 @@ const SideList = ({ bucket }) => {
   const loaded = () => {
   
     return bucket.map(buck =>
-      <li key={buck._id} className='bucketItem'>
+      <div key={buck._id} className='bucketItem'>
         <Link to={`/${buck._id}`}>
           <h4 id='bucketItem'>{buck.title}</h4>
           <img id='bucketImg' src={buck.img} alt={buck.title} />
-          <p id='bucketItem'>{buck.description}</p>
+          <p id='bucketItem1'>{buck.description}</p>
         </Link>
-      </li>
+      </div>
       )
   }
 
@@ -25,8 +25,8 @@ const SideList = ({ bucket }) => {
     // <div>
     <div>
       { bucket 
-        ? <ul className='listDisplay' style={ {textAlign: 'left'} }>{loaded()}</ul> 
-        : <ul>{loading()}</ul> 
+        ? <div className='listDisplay' style={ {textAlign: 'left'} }>{loaded()}</div> 
+        : <div>{loading()}</div> 
       }
       {/* </div>
       <Route path='/:id' render={(rp) => (

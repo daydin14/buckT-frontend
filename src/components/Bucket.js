@@ -66,8 +66,8 @@ const Bucket = (props) => {
     <div>
       
     <div className="bucket">
-      <h3 className="seperate" onClick={getActivity}><img src="https://cdn.iconscout.com/icon/free/png-256/man-biking-2363383-1974832.png" width={80}/></h3>
-      <h3 className="seperate" onClick={getLocation}><img src="https://cdn.iconscout.com/icon/free/png-256/plane-2359613-1987480.png" width={90}/></h3>
+      <h3 className="seperate" onClick={getActivity}><img src="https://cdn.iconscout.com/icon/free/png-256/man-biking-2363383-1974832.png" width={80} title="Activities"/></h3>
+      <h3 className="seperate" onClick={getLocation}><img src="https://cdn.iconscout.com/icon/free/png-256/plane-2359613-1987480.png" width={90} title="Locations"/></h3>
       </div>
       <SideList user={props.user} bucket={bucket}/>
     </div>
