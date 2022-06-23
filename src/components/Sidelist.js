@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { Route } from 'react-router-dom';
-import MainBody from "./Mainbody";
+import Show from "./Show";
 
 const SideList = ({ bucket }) => {
-  // console.log(bucket)
   const loaded = () => {
-    console.log(bucket)
-    return bucket.map(b =>
-      <li key={b._id} className='bucketItem'>
-        <Link to={`/${b._id}`}>
-          <h4>{b.title}</h4>
+  
+    return bucket.map(buck =>
+      <li key={buck._id} className='bucketItem'>
+        <Link to={`/${buck._id}`}>
+          <h4 id='bucketItem'>{buck.title}</h4>
+          <img id='bucketImg' src={buck.img} alt={buck.title} />
+          <p id='bucketItem'>{buck.description}</p>
         </Link>
       </li>
       )
@@ -21,20 +22,22 @@ const SideList = ({ bucket }) => {
   }
 
   return (
+    // <div>
     <div>
-    <div className="lists">
       { bucket 
-        ? <ol style={ {textAlign: 'left'} }>{loaded()}</ol> 
-        : <ol>{loading()}</ol> 
+        ? <ul className='listDisplay' style={ {textAlign: 'left'} }>{loaded()}</ul> 
+        : <ul>{loading()}</ul> 
       }
-      </div>
+      {/* </div>
       <Route path='/:id' render={(rp) => (
-        <MainBody 
+        <Show 
           bucket={bucket}
+          // activity={activity}
+          // location={location}
           {...rp}
         />
         )}>
-      </Route>
+      </Route> */}
     </div>
   )
 };
