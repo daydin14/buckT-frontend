@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Create from "../components/Create";
 
-
 const Home = (props) => {
     const [pathURL, setPathURL] = useState(null);
 
@@ -19,12 +18,7 @@ const Home = (props) => {
             },
             body: JSON.stringify(destination)
         });
-        // getDestination();
     };
-  
-
-
-    // console.log(URL)
 
     return (
         <div className="Home">
