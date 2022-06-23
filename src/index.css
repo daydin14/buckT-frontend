@@ -331,7 +331,29 @@ justify-content: space-evenly;
   cursor: pointer;
 }
 
+.bucketItem{
+  background-color: white;
+  margin: 4%;
+  padding: 4%;
+  list-style: none;
 
+}
+
+#bucketItem{
+  color: black;
+}
+
+#bucketImg{
+  max-width: 150px;
+}
+
+.listDisplay{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 400px;
+  height: 400px;
+}
 
 /* ________________Mobile friendly_______________ */
 @media only screen and (max-width: 500px) {
