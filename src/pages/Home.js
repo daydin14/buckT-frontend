@@ -43,8 +43,9 @@ const Home = (props) => {
                         <button onClick={selectURL} value="location">Location</button>
             
                     </div>
-
+                    <div className="input">
                     <Create createDestination={createDestination} />
+                    </div>
                 </>
             }
         </div>

@@ -146,11 +146,11 @@ padding: 5%;
 
 .main {
   position: absolute;
-  background-color: rgba(255, 166, 0, 0);
+  background-color: rgb(255, 166, 0);
   width: 60%;
-  left: 30%;
-  height: 72%;
-  top: 16%;
+  left: 35%;
+  height: 65%;
+  top: 18%;
  
   
 }
@@ -164,6 +164,46 @@ padding: 5%;
   background-color: aqua;
 }
 
+input {
+  box-sizing: border-box;
+  height: 39px;
+  width: 426px;
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+  text-align: center;
+}
+textarea{
+  box-sizing: border-box;
+  height: 39px;
+  width: 426px;
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+  text-align: center;
+}
+
+input[type=submit]{
+  position: absolute;
+  background-color: #0491aa;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 200px;
+  left: 43%;
+}
+
+button{
+  background-color: #0491aa;
+  border: none;
+  color: white;
+
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
 
 
 /* ________________About Page Styling________________ */
@@ -436,7 +476,6 @@ justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-image: url('https://etherealgaming.co.uk/uploads/monthly_2021_03/p4ga3jgyoxs01.gif.902d8540e669b9b0370dbdf8ae5c4efc.gif');
         background-repeat: no-repeat;
         background-color: #F4F4F4;
         background-size: cover;
@@ -444,7 +483,7 @@ justify-content: space-evenly;
       }
       
       .footer {
-        background-image: url("https://giffiles.alphacoders.com/212/212792.gif");
+        background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo-1250x834.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-color: #654062;
