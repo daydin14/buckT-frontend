@@ -1,16 +1,24 @@
 import React from "react";
 
 const Show = ( props ) => {
-  console.log(props)
-  // const id = props.match.params.id;
-  // console.log(id)
+  const id = props.match.params.id;
+  const item = props?.bucket?.find((b) => b._id === id);
 
-  // const item = props.bucket.find(b => b._id === id);
-  // console.log(item)
+  const deleteActivity = async (id) => {
+    console.log(props.URL)
+    console.log(id)
+    await fetch(props.URL + id, { method: 'DELETE' });
+      props.getActivity();
+      props.getLocation();
+      props.history.push('/List');
+  }
 
   return(
     <div className="show">
-    <h1>Show Component</h1>
+      <h1>{item?.title}</h1>
+      <img src={item?.img} alt={item?.title} />
+      <p>{item?.description}</p>
+      <button onClick={() => deleteActivity(item?._id)}>Check Off the List!</button>
     </div>
   )
 };

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import { Route } from 'react-router-dom';
-import Show from "./Show";
 
-const SideList = ({ bucket }) => {
+const SideList = ({ bucket, URL }) => {
+  // console.log(bucket)
+  // console.log(URL)
   const loaded = () => {
   
     return bucket.map(buck =>
@@ -11,7 +11,6 @@ const SideList = ({ bucket }) => {
         <Link to={`/${buck._id}`}>
           <h4 id='bucketItem'>{buck.title}</h4>
           <img id='bucketImg' src={buck.img} alt={buck.title} />
-          <p id='bucketItem1'>{buck.description}</p>
         </Link>
       </div>
       )
@@ -22,24 +21,16 @@ const SideList = ({ bucket }) => {
   }
 
   return (
-    // <div>
     <div>
-      { bucket 
-        ? <div className='listDisplay' style={ {textAlign: 'left'} }>{loaded()}</div> 
-        : <div>{loading()}</div> 
-      }
-      {/* </div>
-      <Route path='/:id' render={(rp) => (
-        <Show 
-          bucket={bucket}
-          // activity={activity}
-          // location={location}
-          {...rp}
-        />
-        )}>
-      </Route> */}
+      <div>
+        { bucket 
+          ? <ul className='listDisplay' style={ {textAlign: 'left'} }>{loaded()}</ul> 
+          : <ul>{loading()}</ul> 
+        }
+      </div>
     </div>
   )
+    
 };
 
 export default SideList;
