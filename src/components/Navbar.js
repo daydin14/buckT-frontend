@@ -11,13 +11,13 @@ const NavBar = (props) => {
   return (
     <div className="NavBar">
       <Link to='/'>
-        <h1>{`<li>Buck-T</li>`}</h1>
+        <h1><img src="https://cdn-icons-png.flaticon.com/512/3713/3713262.png" width={60}/></h1>
       </Link>
       
       <span className="welcome">
 
         <Link to="/About">
-          <h4 className="navLink">About</h4>
+          <h4 className="navLink"><img src="https://img.icons8.com/bubbles/344/about.png" width={60}/></h4>
         </Link>
         {
           props.user
@@ -25,9 +25,9 @@ const NavBar = (props) => {
           (
             <>
               <Link to='/List'>
-                <h4 className="link">Your List</h4>
+                <h4 className="link"><img src="https://img.icons8.com/bubbles/344/list.png" width={60}/></h4>
               </Link>
-              <h4 className="navLink" onClick={logout} >Logout</h4>
+              <h4 className="navLink" onClick={logout}><img src="https://img.icons8.com/bubbles/344/logout-rounded.png" width={60}/></h4>
               <h4 className="greeting-icon">
                 <img 
                   style={photoStyles}
@@ -37,7 +37,7 @@ const NavBar = (props) => {
               </h4>
             </>
           )
-          : <h4 className="navLink" onClick={login} >Login</h4>
+          : <h4 className="navLink" onClick={login}><img src="https://img.icons8.com/dusk/344/login-rounded-down.png" width={40}/></h4>
         }
 
       </span>

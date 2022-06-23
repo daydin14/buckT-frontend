@@ -22,10 +22,12 @@ const SideList = ({ bucket }) => {
 
   return (
     <div>
+    <div className="lists">
       { bucket 
         ? <ol style={ {textAlign: 'left'} }>{loaded()}</ol> 
         : <ol>{loading()}</ol> 
       }
+      </div>
       <Route path='/:id' render={(rp) => (
         <MainBody 
           bucket={bucket}
