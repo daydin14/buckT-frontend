@@ -58,3 +58,7 @@ ___
 Update List Item functionality on frontend.
 
 Separate lists amongst users rather than a shared one.
+
+
+## <a href="https://docs.google.com/presentation/d/1VxyzlaaIRqbgsEfHOi6rjsEhrpzFPmAUSFLGoHx31Oc/edit#slide=id.gc6f80d1ff_0_5">Pitch Deck Power Point Link</a>
+___
