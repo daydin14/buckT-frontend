@@ -19,7 +19,7 @@ const Show = ( props ) => {
       <img src={item?.img}  className="showimage"  />
       <br></br>
       <p>{item?.description}</p>
-      {/* <button onClick={() => deleteActivity(item?._id)}>Check Off the List!</button> */}
+      <button onClick={() => deleteActivity(item?._id)}><img src="https://img.icons8.com/bubbles/344/delete-forever.png" width={60} title="delete"/></button>
     </div>
   )
 };

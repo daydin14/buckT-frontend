@@ -135,6 +135,8 @@ a {
 .show{
   text-align: center;
   color: black;
+  border: 5px solid #00A4BD;
+  background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo-1250x834.jpg");
 }
 
 .showimage{
@@ -150,7 +152,7 @@ a {
 .lists {
 position: absolute;
 top: 27%;
-left: 15%;
+left: 18%;
 overflow-y:auto
 
   

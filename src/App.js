@@ -88,7 +88,7 @@ function App() {
       </Route>
   
       <Route
-        path="/:id"
+        exact path="/:id"
         render={(rp) => (
           <Show
             bucket={bucket}
@@ -98,7 +98,9 @@ function App() {
             getLocation={getLocation}
           />
         )}
-      ></Route>
+      >
+        
+      </Route>
 
       <Footer />
     </div>
