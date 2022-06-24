@@ -16,9 +16,10 @@ const Show = ( props ) => {
   return(
     <div className="show">
       <h1>{item?.title}</h1>
-      <img src={item?.img} alt={item?.title} />
+      <img src={item?.img}  className="showimage"  />
+      <br></br>
       <p>{item?.description}</p>
-      <button onClick={() => deleteActivity(item?._id)}>Check Off the List!</button>
+      {/* <button onClick={() => deleteActivity(item?._id)}>Check Off the List!</button> */}
     </div>
   )
 };

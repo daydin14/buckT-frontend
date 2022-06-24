@@ -37,18 +37,18 @@ function App() {
   };
 
   const getLocation = async () => {
-    const URL = 'https://buckt-backend.herokuapp.com/location/'
+    const URL = 'https://buckt-backend.herokuapp.com/location/';
     setURL(URL)
     if (!user) return;
     const token = user.getIdToken();
     const response = await fetch(URL, {
       method: 'GET',
       headers: {
-        'Authorization': 'Bearer ' + token
+        Authorization: 'Bearer ' + token
       }
     });
     const data = await response.json();
-     setBucket(data);
+    setBucket(data);
   };
 
   useEffect(() => {

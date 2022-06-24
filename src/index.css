@@ -125,56 +125,34 @@ a {
 }
 
 .bucketItem {
-
-  position:relative;
+  position: relative;
   background-color: pink;
-
-
-margin-right: 9% ;
-margin-bottom: 15%;
-  width: 100px;
-  height: 100px;
   text-align: center;
-
   object-fit: scale-down;
 
 }
 
-#bucketItem {
+.show{
+  text-align: center;
   color: black;
-
-
-
-
 }
 
-#bucketItem1 {
+.showimage{
 
-  color: black;
-  background-color: pink;
-  height: 50px;
-
-
-
-}
-
-#bucketImg {
-  width: 100px;
-  height: 100px;
-}
-
-.listDisplay {
-
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  top: 28%;
-  overflow-y:auto;
-  height: 50%;
   width:80%;
-  left: 0%;
+  max-height: 400px;
+ 
+
+}
+
+
+
+.lists {
+position: absolute;
+top: 27%;
+left: 15%;
+overflow-y:auto
+
   
 
 
@@ -206,7 +184,7 @@ margin-bottom: 15%;
 
 .neonText {
   font-size: 2em;
-  color: rgb(0, 221, 255);
+  color: rgb(5, 0, 0);
 }
 
 .addBucket {
