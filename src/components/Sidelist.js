@@ -35,7 +35,7 @@ const SideList = ({ bucket, URL }) => {
 console.log(bucket)
 return bucket.map(b =>
   <li key={b._id} className='bucketItem'>
-    <Link to={`/${b._id}`}>
+    <Link to={`/show/${b._id}`}>
       <h4>{b.title}</h4>
     </Link>
   </li>

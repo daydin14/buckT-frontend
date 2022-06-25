@@ -22,7 +22,7 @@ function App() {
   const [ URL, setURL ] = useState(null)
   
   const getActivity = async () => {
-    const URL = 'https://buckt-backend.herokuapp.com/activity/';
+    const URL = 'https://bucktt.herokuapp.com/activity/';
     setURL(URL)
     if (!user) return;
     const token = user.getIdToken();
@@ -37,7 +37,7 @@ function App() {
   };
 
   const getLocation = async () => {
-    const URL = 'https://buckt-backend.herokuapp.com/location/';
+    const URL = 'https://bucktt.herokuapp.com/location/';
     setURL(URL)
     if (!user) return;
     const token = user.getIdToken();
@@ -88,8 +88,9 @@ function App() {
       </Route>
   
       <Route
-        exact path="/:id"
+        exact path="/show/:id"
         render={(rp) => (
+
           <Show
             bucket={bucket}
             {...rp}

@@ -8,7 +8,7 @@ const Home = (props) => {
         setPathURL(event.target.innerText.toLowerCase())
     }
 
-    const URL = `https://buckt-backend.herokuapp.com/${pathURL}`
+    const URL = `https://bucktt.herokuapp.com/${pathURL}`
     const createDestination = async (destination) => {
         if (!props.user) return;
         await fetch(URL, {

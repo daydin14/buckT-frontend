@@ -141,8 +141,10 @@ a {
 
 .showimage{
 
-  width:80%;
-  max-height: 400px;
+  width:400px;
+  height:300px;
+
+   object-fit:scale-down;
  
 
 }
